@@ -2959,7 +2959,7 @@ var _appDefault = parcelHelpers.interopDefault(_app);
 var _reactRouterDom = require("react-router-dom");
 const router = (0, _reactRouterDom.createBrowserRouter)([
     {
-        path: "/",
+        path: "/portfolio",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
             fileName: "index.js",
             lineNumber: 7,
@@ -2974,7 +2974,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         }, undefined),
         children: [
             {
-                path: "/about",
+                path: "/portfolio/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                     children: "about"
                 }, void 0, false, {
