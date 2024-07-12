@@ -4,8 +4,7 @@ import Download from '../assets/images/download-icon.png'
 export const topheaderdata = {
   headerLogo: HeaderLogo,
   buttons: [
-    { btnText: "Search", btnStyle: "btn-black", btnArrow: SearchIcon },
     { btnText: "About me", btnStyle: "btn-white" },
-    { btnText: "Downloads", btnStyle: "btn-red", btnArrow: Download },
+    { btnText: "Downloads", btnStyle: "btn-red", btnArrow: Download},
   ],
 };

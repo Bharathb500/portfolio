@@ -22,7 +22,7 @@ const TopHeader = ({ topHeader }) => {
       <div className="header-buttons">
         {topHeader.buttons.length > 0 &&
           topHeader.buttons.map((btnData, index) => (
-            <Button key={index} btnData={btnData} />
+            <Button clickHandler={()=>{}} key={index} btnData={btnData} />
           ))}
       </div>
       <HamBurger clickHandler={hamBurgerClickHandler} isMenuOpen={isMenuOpen}/>

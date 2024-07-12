@@ -27221,16 +27221,25 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _banner = require("./src/components/Banner/Banner");
+var _bannerDefault = parcelHelpers.interopDefault(_banner);
 var _header = require("./src/components/Header/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-            fileName: "App.jsx",
-            lineNumber: 6,
-            columnNumber: 7
-        }, this)
-    }, void 0, false);
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                fileName: "App.jsx",
+                lineNumber: 7,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bannerDefault.default), {}, void 0, false, {
+                fileName: "App.jsx",
+                lineNumber: 8,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true);
 }
 _c = App;
 exports.default = App;
@@ -27242,215 +27251,37 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./src/components/Header/Header":"hTZHl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hTZHl":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$17de = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","./src/components/Banner/Banner":"jqyOJ","./src/components/Header/Header":"hTZHl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jqyOJ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1c52 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$17de.prelude(module);
+$parcel$ReactRefreshHelpers$1c52.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _topHeader = require("./TopHeader");
-var _topHeaderDefault = parcelHelpers.interopDefault(_topHeader);
-var _headerScss = require("./Header.scss");
-var _topHeader1 = require("../../mockData/TopHeader");
-const Header = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-        className: "header",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _topHeaderDefault.default), {
-            topHeader: (0, _topHeader1.topheaderdata)
-        }, void 0, false, {
-            fileName: "src/components/Header/Header.jsx",
-            lineNumber: 8,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/Header/Header.jsx",
-        lineNumber: 7,
-        columnNumber: 5
-    }, undefined);
-};
-_c = Header;
-exports.default = Header;
-var _c;
-$RefreshReg$(_c, "Header");
-
-  $parcel$ReactRefreshHelpers$17de.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","./TopHeader":"knVdd","./Header.scss":"1AYao","../../mockData/TopHeader":"bzV63","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"knVdd":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$fa8f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$fa8f.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _navbar = require("./Navbar");
-var _navbarDefault = parcelHelpers.interopDefault(_navbar);
-var _image = require("../../common/Image/Image");
-var _imageDefault = parcelHelpers.interopDefault(_image);
-var _button = require("../../common/Button/Button");
-var _buttonDefault = parcelHelpers.interopDefault(_button);
-var _hamBurger = require("./HamBurger");
-var _hamBurgerDefault = parcelHelpers.interopDefault(_hamBurger);
-var _navbar1 = require("../../mockData/Navbar");
-var _topHeaderScss = require("./TopHeader.scss");
-var _s = $RefreshSig$();
-const TopHeader = ({ topHeader })=>{
-    _s();
-    console.log(topHeader);
-    const [isMenuOpen, setisMenuOpen] = (0, _react.useState)(false);
-    const hamBurgerClickHandler = ()=>{
-        setisMenuOpen(!isMenuOpen);
-    };
+var _bannerScss = require("./Banner.scss");
+function Banner() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "top-header",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "top-header__wrapper-right",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageDefault.default), {
-                        cname: "header-logo",
-                        imgSrc: topHeader.headerLogo
-                    }, void 0, false, {
-                        fileName: "src/components/Header/TopHeader.jsx",
-                        lineNumber: 19,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {
-                        isMenuOpen: isMenuOpen,
-                        navbarData: (0, _navbar1.navbarData)
-                    }, void 0, false, {
-                        fileName: "src/components/Header/TopHeader.jsx",
-                        lineNumber: 20,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Header/TopHeader.jsx",
-                lineNumber: 18,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "header-buttons",
-                children: topHeader.buttons.length > 0 && topHeader.buttons.map((btnData, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
-                        btnData: btnData
-                    }, index, false, {
-                        fileName: "src/components/Header/TopHeader.jsx",
-                        lineNumber: 25,
-                        columnNumber: 13
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/components/Header/TopHeader.jsx",
-                lineNumber: 22,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _hamBurgerDefault.default), {
-                clickHandler: hamBurgerClickHandler,
-                isMenuOpen: isMenuOpen
-            }, void 0, false, {
-                fileName: "src/components/Header/TopHeader.jsx",
-                lineNumber: 28,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/Header/TopHeader.jsx",
-        lineNumber: 17,
-        columnNumber: 5
-    }, undefined);
-};
-_s(TopHeader, "+Y5Tb6d7DKVEQHIdJsyK3+lG8U0=");
-_c = TopHeader;
-exports.default = TopHeader;
-var _c;
-$RefreshReg$(_c, "TopHeader");
-
-  $parcel$ReactRefreshHelpers$fa8f.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Navbar":"9oAmR","../../common/Image/Image":"hR1Uw","../../common/Button/Button":"l1NLW","./HamBurger":"8g23e","../../mockData/Navbar":"3utjp","./TopHeader.scss":"af2h3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9oAmR":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$cdde = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$cdde.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _navLink = require("./NavLink");
-var _navLinkDefault = parcelHelpers.interopDefault(_navLink);
-function NavBar({ navbarData, isMenuOpen }) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-        className: `navbar navbar-header ${isMenuOpen ? "active" : ""}`,
-        children: navbarData.length > 0 && navbarData.map((navData)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navLinkDefault.default), {
-                navLink: navData.navLink,
-                text: navData.text
-            }, void 0, false, {
-                fileName: "src/components/Header/Navbar.jsx",
-                lineNumber: 8,
-                columnNumber: 11
-            }, this))
+        className: "banner"
     }, void 0, false, {
-        fileName: "src/components/Header/Navbar.jsx",
-        lineNumber: 5,
+        fileName: "src/components/Banner/Banner.jsx",
+        lineNumber: 4,
         columnNumber: 5
     }, this);
 }
-_c = NavBar;
-exports.default = NavBar;
+_c = Banner;
+exports.default = Banner;
 var _c;
-$RefreshReg$(_c, "NavBar");
+$RefreshReg$(_c, "Banner");
 
-  $parcel$ReactRefreshHelpers$cdde.postlude(module);
+  $parcel$ReactRefreshHelpers$1c52.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./NavLink":"664TR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"664TR":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1730 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1730.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const NavLink = ({ navLink, text })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-        className: "nav-link",
-        href: navLink,
-        children: text
-    }, void 0, false, {
-        fileName: "src/components/Header/NavLink.jsx",
-        lineNumber: 3,
-        columnNumber: 5
-    }, undefined);
-};
-_c = NavLink;
-exports.default = NavLink;
-var _c;
-$RefreshReg$(_c, "NavLink");
-
-  $parcel$ReactRefreshHelpers$1730.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Banner.scss":"kRYwS"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27618,7 +27449,216 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"hR1Uw":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"kRYwS":[function() {},{}],"hTZHl":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$17de = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$17de.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _topHeader = require("./TopHeader");
+var _topHeaderDefault = parcelHelpers.interopDefault(_topHeader);
+var _headerScss = require("./Header.scss");
+var _topHeader1 = require("../../mockData/TopHeader");
+const Header = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+        className: "header",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _topHeaderDefault.default), {
+            topHeader: (0, _topHeader1.topheaderdata)
+        }, void 0, false, {
+            fileName: "src/components/Header/Header.jsx",
+            lineNumber: 8,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Header/Header.jsx",
+        lineNumber: 7,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Header;
+exports.default = Header;
+var _c;
+$RefreshReg$(_c, "Header");
+
+  $parcel$ReactRefreshHelpers$17de.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./TopHeader":"knVdd","./Header.scss":"1AYao","../../mockData/TopHeader":"bzV63","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"knVdd":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$fa8f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$fa8f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _navbar = require("./Navbar");
+var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _image = require("../../common/Image/Image");
+var _imageDefault = parcelHelpers.interopDefault(_image);
+var _button = require("../../common/Button/Button");
+var _buttonDefault = parcelHelpers.interopDefault(_button);
+var _hamBurger = require("./HamBurger");
+var _hamBurgerDefault = parcelHelpers.interopDefault(_hamBurger);
+var _navbar1 = require("../../mockData/Navbar");
+var _topHeaderScss = require("./TopHeader.scss");
+var _s = $RefreshSig$();
+const TopHeader = ({ topHeader })=>{
+    _s();
+    console.log(topHeader);
+    const [isMenuOpen, setisMenuOpen] = (0, _react.useState)(false);
+    const hamBurgerClickHandler = ()=>{
+        setisMenuOpen(!isMenuOpen);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "top-header",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "top-header__wrapper-right",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageDefault.default), {
+                        cname: "header-logo",
+                        imgSrc: topHeader.headerLogo
+                    }, void 0, false, {
+                        fileName: "src/components/Header/TopHeader.jsx",
+                        lineNumber: 19,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {
+                        isMenuOpen: isMenuOpen,
+                        navbarData: (0, _navbar1.navbarData)
+                    }, void 0, false, {
+                        fileName: "src/components/Header/TopHeader.jsx",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Header/TopHeader.jsx",
+                lineNumber: 18,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "header-buttons",
+                children: topHeader.buttons.length > 0 && topHeader.buttons.map((btnData, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
+                        clickHandler: ()=>{},
+                        btnData: btnData
+                    }, index, false, {
+                        fileName: "src/components/Header/TopHeader.jsx",
+                        lineNumber: 25,
+                        columnNumber: 13
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/components/Header/TopHeader.jsx",
+                lineNumber: 22,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _hamBurgerDefault.default), {
+                clickHandler: hamBurgerClickHandler,
+                isMenuOpen: isMenuOpen
+            }, void 0, false, {
+                fileName: "src/components/Header/TopHeader.jsx",
+                lineNumber: 28,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Header/TopHeader.jsx",
+        lineNumber: 17,
+        columnNumber: 5
+    }, undefined);
+};
+_s(TopHeader, "+Y5Tb6d7DKVEQHIdJsyK3+lG8U0=");
+_c = TopHeader;
+exports.default = TopHeader;
+var _c;
+$RefreshReg$(_c, "TopHeader");
+
+  $parcel$ReactRefreshHelpers$fa8f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Navbar":"9oAmR","../../common/Image/Image":"hR1Uw","../../common/Button/Button":"l1NLW","./HamBurger":"8g23e","../../mockData/Navbar":"3utjp","./TopHeader.scss":"af2h3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9oAmR":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$cdde = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$cdde.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _navLink = require("./NavLink");
+var _navLinkDefault = parcelHelpers.interopDefault(_navLink);
+function NavBar({ navbarData, isMenuOpen }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+        className: `navbar navbar-header ${isMenuOpen ? "active" : ""}`,
+        children: navbarData.length > 0 && navbarData.map((navData, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navLinkDefault.default), {
+                navLink: navData.navLink,
+                text: navData.text
+            }, index, false, {
+                fileName: "src/components/Header/Navbar.jsx",
+                lineNumber: 8,
+                columnNumber: 11
+            }, this))
+    }, void 0, false, {
+        fileName: "src/components/Header/Navbar.jsx",
+        lineNumber: 5,
+        columnNumber: 5
+    }, this);
+}
+_c = NavBar;
+exports.default = NavBar;
+var _c;
+$RefreshReg$(_c, "NavBar");
+
+  $parcel$ReactRefreshHelpers$cdde.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./NavLink":"664TR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"664TR":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1730 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1730.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const NavLink = ({ navLink, text })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+        className: "nav-link",
+        href: navLink,
+        children: text
+    }, void 0, false, {
+        fileName: "src/components/Header/NavLink.jsx",
+        lineNumber: 3,
+        columnNumber: 5
+    }, undefined);
+};
+_c = NavLink;
+exports.default = NavLink;
+var _c;
+$RefreshReg$(_c, "NavLink");
+
+  $parcel$ReactRefreshHelpers$1730.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hR1Uw":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$37ad = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27663,9 +27703,10 @@ var _image = require("../Image/Image");
 var _imageDefault = parcelHelpers.interopDefault(_image);
 var _buttonScss = require("./Button.scss");
 function Button({ btnData }) {
-    const { btnText, clickHandler, btnStyle, btnArrow } = btnData;
+    const { btnText, clickHandler, btnStyle, btnArrow, link } = btnData;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+            href: link,
             className: `btn ${btnStyle} ${btnText.toLowerCase() === "search" ? "search-btn" : ""}`,
             onClick: clickHandler,
             children: [
@@ -27783,11 +27824,6 @@ var _downloadIconPngDefault = parcelHelpers.interopDefault(_downloadIconPng);
 const topheaderdata = {
     headerLogo: (0, _headerLogoPngDefault.default),
     buttons: [
-        {
-            btnText: "Search",
-            btnStyle: "btn-black",
-            btnArrow: (0, _downloadPngDefault.default)
-        },
         {
             btnText: "About me",
             btnStyle: "btn-white"
