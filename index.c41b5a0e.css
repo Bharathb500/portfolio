@@ -1,32 +1,152 @@
-header {
-  background: red;
-  justify-content: space-between;
-  padding: 10px;
+.btn {
+  cursor: pointer;
+  border-radius: 5px;
+  align-items: center;
+  gap: 5px;
+  padding: 12px 24px;
   display: flex;
 }
 
-header img {
-  max-width: 50px;
+.btn img {
+  width: 14px;
+  height: 14px;
 }
 
-header .navbar {
+.btn.btn-white {
+  color: #db0011;
+  background-color: #fff;
+  border: 1px solid #db0011;
+}
+
+.btn.btn-red {
+  color: #fff;
+  background-color: #db0011;
+  border: none;
+}
+
+.btn.btn-black {
+  color: #fff;
+  background: none;
+  border: none;
+}
+
+.header-hamburger {
+  flex-direction: column;
+  gap: 5px;
+  display: flex;
+}
+
+@media (width >= 1201px) {
+  .header-hamburger {
+    display: none;
+  }
+}
+
+.header-hamburger .hamburger {
+  background: #fff;
+  width: 40px;
+  height: 5px;
+  transition: all .5s;
+}
+
+.header-hamburger .hamburger:hover {
+  cursor: pointer;
+}
+
+.header-hamburger .hamburger.translate-row-1 {
+  transform-origin: top;
+  transform: rotate(45deg)translate(10px);
+}
+
+.header-hamburger .hamburger.translate-row-3 {
+  transform-origin: top;
+  transform: rotate(-45deg)translate(4px);
+}
+
+.top-header {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1248px;
+  margin: auto;
+  padding: 5px;
+  display: flex;
+}
+
+@media (width <= 1200px) {
+  .top-header {
+    padding: 5px 20px;
+  }
+}
+
+.top-header__wrapper-right {
+  align-items: center;
+  gap: 16px;
+  display: flex;
+}
+
+.top-header__wrapper-right .navbar {
   gap: 10px;
   display: flex;
 }
 
-@media (width <= 500px) {
-  header .navbar {
-    background: #000;
+@media (width <= 1200px) {
+  .top-header__wrapper-right .navbar {
+    background: #333;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     transition: all .5s;
     position: fixed;
-    top: 0;
+    top: 58px;
     bottom: 0;
     left: -100%;
   }
+
+  .top-header__wrapper-right .navbar.active {
+    left: 0;
+  }
 }
 
-header .navbar.expanded {
-  left: 0;
+.top-header__wrapper-right .navbar .nav-link {
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.top-header__wrapper-right .navbar .nav-link:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+.top-header .header-logo {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.top-header .header-buttons {
+  gap: 8px;
+  display: flex;
+}
+
+@media (width <= 1200px) {
+  .top-header .header-buttons {
+    display: none;
+  }
+}
+
+.top-header .btn-black {
+  flex-direction: row-reverse;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
 }
 /*# sourceMappingURL=index.c41b5a0e.css.map */
