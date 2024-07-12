@@ -1,0 +1,28 @@
+@import "../../assets/styles/index.scss";
+.btn {
+  padding: 12px 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  img {
+    width: 14px;
+    height: 14px;
+  }
+  &.btn-white {
+    border: 1px solid $color-red;
+    color: $color-red;
+    background-color: $color-white;
+  }
+  &.btn-red {
+    border: none;
+    color: $color-white;
+    background-color: $color-red;
+  }
+  &.btn-black {
+    border: none;
+    color: $color-white;
+    background: none;
+  }
+}

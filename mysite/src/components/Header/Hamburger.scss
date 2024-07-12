@@ -1,0 +1,28 @@
+@import '../../assets/styles/index.scss';
+
+.header-hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    @include large {
+        display: none;
+    }
+    .hamburger {
+        height: 5px;
+        width: 40px;
+        background: $color-white;
+        transition: all .5s;
+        &:hover {
+            cursor: pointer;
+
+        }
+        &.translate-row-1 {
+            transform: rotate(45deg) translate(10px);
+            transform-origin: top;
+        }
+        &.translate-row-3 {
+            transform: rotate(-45deg) translate(4px);
+            transform-origin: top;
+        }
+    }
+}
