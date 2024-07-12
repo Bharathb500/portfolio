@@ -1,0 +1,32 @@
+header {
+  background: red;
+  justify-content: space-between;
+  padding: 10px;
+  display: flex;
+}
+
+header img {
+  max-width: 50px;
+}
+
+header .navbar {
+  gap: 10px;
+  display: flex;
+}
+
+@media (width <= 500px) {
+  header .navbar {
+    background: #000;
+    width: 100%;
+    transition: all .5s;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+  }
+}
+
+header .navbar.expanded {
+  left: 0;
+}
+/*# sourceMappingURL=index.c41b5a0e.css.map */
