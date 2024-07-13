@@ -27225,17 +27225,25 @@ var _banner = require("./src/components/Banner/Banner");
 var _bannerDefault = parcelHelpers.interopDefault(_banner);
 var _header = require("./src/components/Header/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
+var _typingText = require("./src/components/TypingText/TypingText");
+var _typingTextDefault = parcelHelpers.interopDefault(_typingText);
 function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 7,
+                lineNumber: 8,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bannerDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bannerDefault.default), {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _typingTextDefault.default), {}, void 0, false, {
+                    fileName: "App.jsx",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 8,
+                lineNumber: 9,
                 columnNumber: 7
             }, this)
         ]
@@ -27251,7 +27259,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./src/components/Banner/Banner":"jqyOJ","./src/components/Header/Header":"hTZHl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jqyOJ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./src/components/Banner/Banner":"jqyOJ","./src/components/Header/Header":"hTZHl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./src/components/TypingText/TypingText":"2mLho"}],"jqyOJ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1c52 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27262,9 +27270,10 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _bannerScss = require("./Banner.scss");
-function Banner() {
+function Banner({ children }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "banner"
+        className: "banner",
+        children: children
     }, void 0, false, {
         fileName: "src/components/Banner/Banner.jsx",
         lineNumber: 4,
@@ -27880,6 +27889,78 @@ module.exports = require("9ab4c9f924c5646").getBundleURL("avzPb") + "download.f7
 },{"9ab4c9f924c5646":"lgJ39"}],"jSU5U":[function(require,module,exports) {
 module.exports = require("d9e69be5324e1889").getBundleURL("avzPb") + "download-icon.b1d84163.png" + "?" + Date.now();
 
-},{"d9e69be5324e1889":"lgJ39"}]},["dlFZn","1xC6H","g9R30"], "g9R30", "parcelRequire7d1c")
+},{"d9e69be5324e1889":"lgJ39"}],"2mLho":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b422 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b422.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _typingTextScss = require("./TypingText.scss");
+var _s = $RefreshSig$();
+function TypingText() {
+    _s();
+    const textArray = [
+        "Frontend Developer",
+        " AEM Developer"
+    ];
+    const [textindex, settextindex] = (0, _react.useState)(0);
+    const movingTextRef = (0, _react.useRef)(null);
+    (0, _react.useEffect)(()=>{
+        const handleAnimationEnd = ()=>{
+            settextindex((prevIndex)=>(prevIndex + 1) % textArray.length);
+        };
+        const movingTextElement = movingTextRef.current;
+        movingTextElement.addEventListener("animationiteration", handleAnimationEnd);
+        return ()=>{
+            movingTextElement.removeEventListener("animationiteration", handleAnimationEnd);
+        };
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "typing-text-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "steady-text",
+                children: "Hi I'm a"
+            }, void 0, false, {
+                fileName: "src/components/TypingText/TypingText.jsx",
+                lineNumber: 24,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "moving-text",
+                ref: movingTextRef,
+                children: [
+                    "\xa0",
+                    textArray[textindex]
+                ]
+            }, void 0, true, {
+                fileName: "src/components/TypingText/TypingText.jsx",
+                lineNumber: 25,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/TypingText/TypingText.jsx",
+        lineNumber: 23,
+        columnNumber: 5
+    }, this);
+}
+_s(TypingText, "FRsmm11+hD4+V5yJsgF235g2Ppg=");
+_c = TypingText;
+exports.default = TypingText;
+var _c;
+$RefreshReg$(_c, "TypingText");
+
+  $parcel$ReactRefreshHelpers$b422.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./TypingText.scss":"izO0M","react":"21dqq"}],"izO0M":[function() {},{}]},["dlFZn","1xC6H","g9R30"], "g9R30", "parcelRequire7d1c")
 
 //# sourceMappingURL=index.d498c491.js.map
