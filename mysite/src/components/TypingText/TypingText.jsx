@@ -6,23 +6,24 @@ function TypingText() {
   const [textindex, settextindex] = useState(0);
   const movingTextRef = useRef(null);
 
-  useEffect(() => {
-    const handleAnimationEnd = () => {
-      settextindex((prevIndex) => (prevIndex + 1) % textArray.length);
-    };
+  const handleAnimationEnd = () => {
+    settextindex((prevIndex) => (prevIndex + 1) % textArray.length);
+  };
+//   useEffect(() => {
 
-    const movingTextElement = movingTextRef.current;
-    movingTextElement.addEventListener('animationiteration', handleAnimationEnd);
 
-    return () => {
-      movingTextElement.removeEventListener('animationiteration', handleAnimationEnd);
-    };
-  }, []);
+    // const movingTextElement = movingTextRef.current;
+    // movingTextElement.addEventListener('animationiteration', handleAnimationEnd);
+
+    // return () => {
+    //   movingTextElement.removeEventListener('animationiteration', handleAnimationEnd);
+    // };
+//   }, []);
 
   return (
     <div className="typing-text-container">
-      <span className="steady-text">Hi I'm a</span>
-      <span className="moving-text" ref={movingTextRef}>&nbsp;{textArray[textindex]}</span>
+      <span className="steady-text">I'm Bharath</span>
+      <span className="moving-text" onAnimationIteration={handleAnimationEnd}  ref={movingTextRef}>&nbsp;I'm a {textArray[textindex]}</span>
     </div>
   );
 }

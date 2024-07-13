@@ -1,0 +1,44 @@
+@import "../../assets/styles/index.scss";
+
+.about-me-popup.modal-active {
+    position: fixed;
+    left: 0;
+    background: linear-gradient(45deg, black, transparent);
+    position: fixed;
+    inset: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    .popup-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        gap: 10px;
+        padding: 20px;
+        img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            a {
+                text-decoration: none;
+                color: $color-black;
+                font-size: 1rem;
+                font-weight: 500;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

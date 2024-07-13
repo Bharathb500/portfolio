@@ -1,10 +1,10 @@
 import HeaderLogo from "../assets/images/Header_logo.png";
 import SearchIcon from '../assets/images/download.png'
-import Download from '../assets/images/download-icon.png'
+import Resume from '../assets/images/resume.jpg';
 export const topheaderdata = {
   headerLogo: HeaderLogo,
   buttons: [
     { btnText: "About me", btnStyle: "btn-white" },
-    { btnText: "Downloads", btnStyle: "btn-red", btnArrow: Download},
+    { btnText: "Download Resume", btnStyle: "btn-red", link: Resume},
   ],
 };
