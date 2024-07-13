@@ -1,7 +1,7 @@
 import './Banner.scss';
-function Banner() {
+function Banner({children}) {
   return (
-    <div className='banner'></div>
+    <div className='banner'>{children}</div>
   )
 }
 
