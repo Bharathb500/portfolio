@@ -2,10 +2,10 @@ import TopHeader from './TopHeader';
 import './Header.scss';
 import { topheaderdata } from '../../mockData/TopHeader';
 
-const Header = ({clickHandler}) => {
+const Header = ({clickHandler, isModalOpen}) => {
   return (
     <header className="header">
-      <TopHeader clickHandler={clickHandler} topHeader={topheaderdata} />
+      <TopHeader isModalOpen={isModalOpen} clickHandler={clickHandler} topHeader={topheaderdata} />
       {/* Additional header content goes here */}
     </header>
   );

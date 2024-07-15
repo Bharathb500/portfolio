@@ -1,6 +1,6 @@
 import './Button.scss'
 
-function Button({ btnData, clickHandler }) {
+function Button({ btnData, clickHandler, isModalOpen }) {
   const { btnText, btnStyle, btnArrow, link } = btnData;
   return (
     <>
@@ -8,7 +8,7 @@ function Button({ btnData, clickHandler }) {
         className={`btn ${btnStyle} ${
           btnText.toLowerCase() === "search" ? "search-btn" : ""
         }`}
-        onClick={clickHandler}
+        onClick={!link ? clickHandler : ()=>{}}
       >
         {btnText}
       </a>

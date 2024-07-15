@@ -7,7 +7,7 @@ import { navbarData } from "../../mockData/Navbar";
 import "./TopHeader.scss";
 import HeaderButtons from "./HeaderButtons";
 
-const TopHeader = ({ topHeader, clickHandler}) => {
+const TopHeader = ({ topHeader, clickHandler, isModalOpen }) => {
   console.log(topHeader);
   const [isMenuOpen, setisMenuOpen] = useState(false);
   const [isMobileDevice, setIsMobileDevice] = useState(false);
@@ -42,10 +42,16 @@ const TopHeader = ({ topHeader, clickHandler}) => {
           topHeader={topHeader}
           isMenuOpen={isMenuOpen}
           navbarData={navbarData}
+          isModalOpen={isModalOpen}
+          clickHandler={clickHandler}
         />
       </div>
-      {!isMobileDevice  && (
-        <HeaderButtons clickHandler={clickHandler} topHeader={topHeader} />
+      {!isMobileDevice && (
+        <HeaderButtons
+          isModalOpen={isModalOpen}
+          clickHandler={clickHandler}
+          topHeader={topHeader}
+        />
       )}
       <HamBurger clickHandler={hamBurgerClickHandler} isMenuOpen={isMenuOpen} />
     </div>

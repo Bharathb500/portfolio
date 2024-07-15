@@ -29,7 +29,7 @@
         top: 58px;
         gap: 20px;
         justify-content: center;
-        font-size: 1.5rem;
+        font-size: 1rem;
         &.active {
           left: 0;
           border-top: 1px solid $color-border;
@@ -44,7 +44,7 @@
         @include medium {
           width: calc(100% - 24px);
           text-align: center;
-          max-width: 600px;
+          max-width: 180px;
         }
 
         &:hover {

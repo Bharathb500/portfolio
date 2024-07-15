@@ -27243,6 +27243,7 @@ function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {
+                isModalOpen: isModalOpen,
                 clickHandler: clickHandler
             }, void 0, false, {
                 fileName: "App.jsx",
@@ -27289,38 +27290,41 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./src/components/Banner/Banner":"jqyOJ","./src/components/Header/Header":"hTZHl","./src/components/TypingText/TypingText":"2mLho","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./src/components/AboutmePopup/AboutmePopup":"3tqia","./src/components/PopupContent/PopupContent":"liZTm","./src/mockData/Popupcontent":"asqh5","react":"21dqq"}],"jqyOJ":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1c52 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./src/components/AboutmePopup/AboutmePopup":"3tqia","./src/components/Banner/Banner":"jqyOJ","./src/components/Header/Header":"hTZHl","./src/components/PopupContent/PopupContent":"liZTm","./src/components/TypingText/TypingText":"2mLho","./src/mockData/Popupcontent":"asqh5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3tqia":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$857c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1c52.prelude(module);
+$parcel$ReactRefreshHelpers$857c.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _bannerScss = require("./Banner.scss");
-function Banner({ children }) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "banner",
-        children: children
-    }, void 0, false, {
-        fileName: "src/components/Banner/Banner.jsx",
-        lineNumber: 4,
-        columnNumber: 5
-    }, this);
+var _aboutmePopupScss = require("./AboutmePopup.scss");
+function AboutmePopup({ children, isModalOpen, clickHandler }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: isModalOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            onClick: clickHandler,
+            className: `about-me-popup ${isModalOpen ? "modal-active" : ""}`,
+            children: children
+        }, void 0, false, {
+            fileName: "src/components/AboutmePopup/AboutmePopup.jsx",
+            lineNumber: 5,
+            columnNumber: 21
+        }, this)
+    }, void 0, false);
 }
-_c = Banner;
-exports.default = Banner;
+_c = AboutmePopup;
+exports.default = AboutmePopup;
 var _c;
-$RefreshReg$(_c, "Banner");
+$RefreshReg$(_c, "AboutmePopup");
 
-  $parcel$ReactRefreshHelpers$1c52.postlude(module);
+  $parcel$ReactRefreshHelpers$857c.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Banner.scss":"kRYwS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kRYwS":[function() {},{}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./AboutmePopup.scss":"7sDe9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7sDe9":[function() {},{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27488,7 +27492,38 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"hTZHl":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"jqyOJ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1c52 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1c52.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _bannerScss = require("./Banner.scss");
+function Banner({ children }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "banner",
+        children: children
+    }, void 0, false, {
+        fileName: "src/components/Banner/Banner.jsx",
+        lineNumber: 4,
+        columnNumber: 5
+    }, this);
+}
+_c = Banner;
+exports.default = Banner;
+var _c;
+$RefreshReg$(_c, "Banner");
+
+  $parcel$ReactRefreshHelpers$1c52.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./Banner.scss":"kRYwS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kRYwS":[function() {},{}],"hTZHl":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$17de = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27502,10 +27537,11 @@ var _topHeader = require("./TopHeader");
 var _topHeaderDefault = parcelHelpers.interopDefault(_topHeader);
 var _headerScss = require("./Header.scss");
 var _topHeader1 = require("../../mockData/TopHeader");
-const Header = ({ clickHandler })=>{
+const Header = ({ clickHandler, isModalOpen })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
         className: "header",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _topHeaderDefault.default), {
+            isModalOpen: isModalOpen,
             clickHandler: clickHandler,
             topHeader: (0, _topHeader1.topheaderdata)
         }, void 0, false, {
@@ -27554,7 +27590,7 @@ var _topHeaderScss = require("./TopHeader.scss");
 var _headerButtons = require("./HeaderButtons");
 var _headerButtonsDefault = parcelHelpers.interopDefault(_headerButtons);
 var _s = $RefreshSig$();
-const TopHeader = ({ topHeader, clickHandler })=>{
+const TopHeader = ({ topHeader, clickHandler, isModalOpen })=>{
     _s();
     console.log(topHeader);
     const [isMenuOpen, setisMenuOpen] = (0, _react.useState)(false);
@@ -27593,7 +27629,9 @@ const TopHeader = ({ topHeader, clickHandler })=>{
                         isMobileDevice: isMobileDevice,
                         topHeader: topHeader,
                         isMenuOpen: isMenuOpen,
-                        navbarData: (0, _navbar1.navbarData)
+                        navbarData: (0, _navbar1.navbarData),
+                        isModalOpen: isModalOpen,
+                        clickHandler: clickHandler
                     }, void 0, false, {
                         fileName: "src/components/Header/TopHeader.jsx",
                         lineNumber: 39,
@@ -27606,11 +27644,12 @@ const TopHeader = ({ topHeader, clickHandler })=>{
                 columnNumber: 7
             }, undefined),
             !isMobileDevice && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerButtonsDefault.default), {
+                isModalOpen: isModalOpen,
                 clickHandler: clickHandler,
                 topHeader: topHeader
             }, void 0, false, {
                 fileName: "src/components/Header/TopHeader.jsx",
-                lineNumber: 48,
+                lineNumber: 50,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _hamBurgerDefault.default), {
@@ -27618,7 +27657,7 @@ const TopHeader = ({ topHeader, clickHandler })=>{
                 isMenuOpen: isMenuOpen
             }, void 0, false, {
                 fileName: "src/components/Header/TopHeader.jsx",
-                lineNumber: 50,
+                lineNumber: 56,
                 columnNumber: 7
             }, undefined)
         ]
@@ -27653,7 +27692,7 @@ var _headerButtons = require("./HeaderButtons");
 var _headerButtonsDefault = parcelHelpers.interopDefault(_headerButtons);
 var _navLink = require("./NavLink");
 var _navLinkDefault = parcelHelpers.interopDefault(_navLink);
-function NavBar({ navbarData, isMenuOpen, topHeader, isMobileDevice, windowWidth }) {
+function NavBar({ navbarData, isMenuOpen, topHeader, isMobileDevice, windowWidth, clickHandler }) {
     console.log(isMobileDevice, windowWidth);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
         className: `navbar navbar-header ${isMenuOpen ? "active" : ""}`,
@@ -27667,6 +27706,7 @@ function NavBar({ navbarData, isMenuOpen, topHeader, isMobileDevice, windowWidth
                     columnNumber: 11
                 }, this)),
             isMobileDevice && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerButtonsDefault.default), {
+                clickHandler: clickHandler,
                 topHeader: topHeader
             }, void 0, false, {
                 fileName: "src/components/Header/Navbar.jsx",
@@ -27703,10 +27743,11 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _button = require("../../common/Button/Button");
 var _buttonDefault = parcelHelpers.interopDefault(_button);
-function HeaderButtons({ topHeader, clickHandler }) {
+function HeaderButtons({ topHeader, clickHandler, isModalOpen }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header-buttons",
         children: topHeader.buttons.length > 0 && topHeader.buttons.map((btnData, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
+                isModalOpen: isModalOpen,
                 clickHandler: clickHandler,
                 btnData: btnData
             }, index, false, {
@@ -27730,7 +27771,7 @@ $RefreshReg$(_c, "HeaderButtons");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../../common/Button/Button":"l1NLW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"l1NLW":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../common/Button/Button":"l1NLW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"l1NLW":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d23f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27741,14 +27782,14 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _buttonScss = require("./Button.scss");
-function Button({ btnData, clickHandler }) {
+function Button({ btnData, clickHandler, isModalOpen }) {
     const { btnText, btnStyle, btnArrow, link } = btnData;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
             download: true,
             href: link || "javascript:void(0)",
             className: `btn ${btnStyle} ${btnText.toLowerCase() === "search" ? "search-btn" : ""}`,
-            onClick: clickHandler,
+            onClick: !link ? clickHandler : ()=>{},
             children: btnText
         }, void 0, false, {
             fileName: "src/common/Button/Button.jsx",
@@ -27916,7 +27957,7 @@ const topheaderdata = {
     headerLogo: (0, _headerLogoPngDefault.default),
     buttons: [
         {
-            btnText: "About me",
+            btnText: "Profile",
             btnStyle: "btn-white"
         },
         {
@@ -27927,7 +27968,7 @@ const topheaderdata = {
     ]
 };
 
-},{"../assets/images/Header_logo.png":"5mk8Z","../assets/images/download.png":"dh4Nx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../assets/images/resume.jpg":"fGHtF"}],"5mk8Z":[function(require,module,exports) {
+},{"../assets/images/Header_logo.png":"5mk8Z","../assets/images/download.png":"dh4Nx","../assets/images/resume.jpg":"fGHtF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5mk8Z":[function(require,module,exports) {
 module.exports = require("9f8e06b004f82d6f").getBundleURL("avzPb") + "Header_logo.ea00c824.png" + "?" + Date.now();
 
 },{"9f8e06b004f82d6f":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -27971,7 +28012,178 @@ module.exports = require("9ab4c9f924c5646").getBundleURL("avzPb") + "download.f7
 },{"9ab4c9f924c5646":"lgJ39"}],"fGHtF":[function(require,module,exports) {
 module.exports = require("be8f92fba01664e6").getBundleURL("avzPb") + "resume.c055b491.jpg" + "?" + Date.now();
 
-},{"be8f92fba01664e6":"lgJ39"}],"2mLho":[function(require,module,exports) {
+},{"be8f92fba01664e6":"lgJ39"}],"liZTm":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8157 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8157.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _image = require("../../common/Image/Image");
+var _imageDefault = parcelHelpers.interopDefault(_image);
+function PopupContent({ content }) {
+    const { headerLogo, profileName, designation, mobileNo, emailId, linkedin, github } = content;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        onClick: (e)=>{
+            e.stopPropagation();
+        },
+        className: "popup-content",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageDefault.default), {
+                imgSrc: headerLogo,
+                imgAlt: "profile"
+            }, void 0, false, {
+                fileName: "src/components/PopupContent/PopupContent.jsx",
+                lineNumber: 20,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "content",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: profileName
+                    }, void 0, false, {
+                        fileName: "src/components/PopupContent/PopupContent.jsx",
+                        lineNumber: 22,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: designation
+                    }, void 0, false, {
+                        fileName: "src/components/PopupContent/PopupContent.jsx",
+                        lineNumber: 23,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "social-profile",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: linkedin,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                    xmlns: "http://www.w3.org/2000/svg",
+                                    viewBox: "0 0 24 24",
+                                    "data-supported-dps": "24x24",
+                                    fill: "currentColor",
+                                    class: "mercado-match",
+                                    width: "32",
+                                    height: "32",
+                                    focusable: "false",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                        d: "M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"
+                                    }, void 0, false, {
+                                        fileName: "src/components/PopupContent/PopupContent.jsx",
+                                        lineNumber: 36,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/components/PopupContent/PopupContent.jsx",
+                                    lineNumber: 26,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/components/PopupContent/PopupContent.jsx",
+                                lineNumber: 25,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: github,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                    height: "32",
+                                    "aria-hidden": "true",
+                                    viewBox: "0 0 16 16",
+                                    version: "1.1",
+                                    width: "32",
+                                    "data-view-component": "true",
+                                    class: "octicon octicon-mark-github v-align-middle color-fg-default",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                        d: "M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+                                    }, void 0, false, {
+                                        fileName: "src/components/PopupContent/PopupContent.jsx",
+                                        lineNumber: 49,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/components/PopupContent/PopupContent.jsx",
+                                    lineNumber: 40,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/components/PopupContent/PopupContent.jsx",
+                                lineNumber: 39,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/PopupContent/PopupContent.jsx",
+                        lineNumber: 24,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "contact",
+                        children: [
+                            "Mobile:\xa0",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: `tel:${mobileNo}`,
+                                children: [
+                                    " ",
+                                    mobileNo
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/PopupContent/PopupContent.jsx",
+                                lineNumber: 54,
+                                columnNumber: 24
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/PopupContent/PopupContent.jsx",
+                        lineNumber: 53,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "email",
+                        children: [
+                            "Email:\xa0",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: `mailto:${emailId}`,
+                                children: emailId
+                            }, void 0, false, {
+                                fileName: "src/components/PopupContent/PopupContent.jsx",
+                                lineNumber: 57,
+                                columnNumber: 23
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/PopupContent/PopupContent.jsx",
+                        lineNumber: 56,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/PopupContent/PopupContent.jsx",
+                lineNumber: 21,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/PopupContent/PopupContent.jsx",
+        lineNumber: 14,
+        columnNumber: 5
+    }, this);
+}
+_c = PopupContent;
+exports.default = PopupContent;
+var _c;
+$RefreshReg$(_c, "PopupContent");
+
+  $parcel$ReactRefreshHelpers$8157.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../../common/Image/Image":"hR1Uw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2mLho":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b422 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28044,122 +28256,7 @@ $RefreshReg$(_c, "TypingText");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./TypingText.scss":"izO0M","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"izO0M":[function() {},{}],"3tqia":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$857c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$857c.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _aboutmePopupScss = require("./AboutmePopup.scss");
-function AboutmePopup({ children, isModalOpen, clickHandler }) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: isModalOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            onClick: clickHandler,
-            className: `about-me-popup ${isModalOpen ? "modal-active" : ""}`,
-            children: children
-        }, void 0, false, {
-            fileName: "src/components/AboutmePopup/AboutmePopup.jsx",
-            lineNumber: 5,
-            columnNumber: 21
-        }, this)
-    }, void 0, false);
-}
-_c = AboutmePopup;
-exports.default = AboutmePopup;
-var _c;
-$RefreshReg$(_c, "AboutmePopup");
-
-  $parcel$ReactRefreshHelpers$857c.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","./AboutmePopup.scss":"7sDe9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7sDe9":[function() {},{}],"liZTm":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$8157 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8157.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _image = require("../../common/Image/Image");
-var _imageDefault = parcelHelpers.interopDefault(_image);
-function PopupContent({ content }) {
-    const { headerLogo, profileName, designation, mobileNo, emailId } = content;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "popup-content",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageDefault.default), {
-                imgSrc: headerLogo,
-                imgAlt: "profile"
-            }, void 0, false, {
-                fileName: "src/components/PopupContent/PopupContent.jsx",
-                lineNumber: 6,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "content",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        children: profileName
-                    }, void 0, false, {
-                        fileName: "src/components/PopupContent/PopupContent.jsx",
-                        lineNumber: 8,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: designation
-                    }, void 0, false, {
-                        fileName: "src/components/PopupContent/PopupContent.jsx",
-                        lineNumber: 9,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: `tel:${mobileNo}`,
-                        children: mobileNo
-                    }, void 0, false, {
-                        fileName: "src/components/PopupContent/PopupContent.jsx",
-                        lineNumber: 10,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: `mailto:${emailId}`,
-                        children: emailId
-                    }, void 0, false, {
-                        fileName: "src/components/PopupContent/PopupContent.jsx",
-                        lineNumber: 11,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/PopupContent/PopupContent.jsx",
-                lineNumber: 7,
-                columnNumber: 5
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/PopupContent/PopupContent.jsx",
-        lineNumber: 5,
-        columnNumber: 10
-    }, this);
-}
-_c = PopupContent;
-exports.default = PopupContent;
-var _c;
-$RefreshReg$(_c, "PopupContent");
-
-  $parcel$ReactRefreshHelpers$8157.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../../common/Image/Image":"hR1Uw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"asqh5":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./TypingText.scss":"izO0M","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"izO0M":[function() {},{}],"asqh5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "popupcontent", ()=>popupcontent);
@@ -28170,7 +28267,9 @@ const popupcontent = {
     profileName: "Bharath Barigela",
     designation: "AEM Full Stack Developer",
     mobileNo: "+917036778037",
-    emailId: "barigelabharath500@gmail.com"
+    emailId: "barigelabharath500@gmail.com",
+    linkedin: "https://github.com/Bharathb500/portfolio/tree/feature_portfolio-site/mysite",
+    github: "https://www.linkedin.com/in/bharath-b-95291b193/"
 };
 
 },{"../assets/images/Header_logo.png":"5mk8Z","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["dlFZn","1xC6H","g9R30"], "g9R30", "parcelRequire7d1c")

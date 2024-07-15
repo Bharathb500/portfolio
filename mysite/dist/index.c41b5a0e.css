@@ -1,3 +1,59 @@
+.about-me-popup.modal-active {
+  left: 0;
+  background: linear-gradient(45deg, #333, #0000);
+  position: fixed;
+  inset: 0;
+}
+
+.about-me-popup.modal-active .popup-content {
+  background: #e3f2fd;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 50px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.about-me-popup.modal-active .popup-content img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+
+.about-me-popup.modal-active .popup-content .content {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.about-me-popup.modal-active .popup-content .content a {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.about-me-popup.modal-active .popup-content .content a:hover {
+  text-decoration: underline;
+}
+
+.about-me-popup.modal-active .popup-content .content .email, .about-me-popup.modal-active .popup-content .content .contact {
+  display: flex;
+}
+
+.about-me-popup.modal-active .popup-content .content .social-profile {
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
 .banner {
   background-color: #b30027;
   height: 50vh;
@@ -104,7 +160,7 @@
     align-items: center;
     gap: 20px;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     transition: all .5s;
     position: fixed;
     top: 58px;
@@ -129,7 +185,7 @@
   .top-header__wrapper-right .navbar .nav-link {
     text-align: center;
     width: calc(100% - 24px);
-    max-width: 600px;
+    max-width: 180px;
   }
 }
 
@@ -162,6 +218,13 @@
 header {
   background-color: #fff;
   border-bottom: 1px solid #e3e8e8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
 }
 
 .typing-text-container {
@@ -205,56 +268,5 @@ header {
   100% {
     width: 0;
   }
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
-}
-
-.about-me-popup.modal-active {
-  left: 0;
-  background: linear-gradient(45deg, #000, #0000);
-  position: fixed;
-  inset: 0;
-}
-
-.about-me-popup.modal-active .popup-content {
-  background-color: #fff;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 20px;
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.about-me-popup.modal-active .popup-content img {
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-}
-
-.about-me-popup.modal-active .popup-content .content {
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  display: flex;
-}
-
-.about-me-popup.modal-active .popup-content .content a {
-  color: #333;
-  font-size: 1rem;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.about-me-popup.modal-active .popup-content .content a:hover {
-  text-decoration: underline;
 }
 /*# sourceMappingURL=index.c41b5a0e.css.map */

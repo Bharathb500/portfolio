@@ -13,7 +13,7 @@ function App() {
   }
   return (
     <>
-      <Header clickHandler={clickHandler}/>
+      <Header isModalOpen={isModalOpen} clickHandler={clickHandler}/>
       <Banner>
         <TypingText />
       </Banner>

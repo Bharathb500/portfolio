@@ -4,7 +4,7 @@ import Resume from '../assets/images/resume.jpg';
 export const topheaderdata = {
   headerLogo: HeaderLogo,
   buttons: [
-    { btnText: "About me", btnStyle: "btn-white" },
+    { btnText: "Profile", btnStyle: "btn-white" },
     { btnText: "Download Resume", btnStyle: "btn-red", link: Resume},
   ],
 };
