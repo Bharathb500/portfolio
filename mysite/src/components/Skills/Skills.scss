@@ -1,0 +1,17 @@
+@import "../../assets/styles/index.scss";
+
+.react-slick {
+    max-width: 1248px;
+    margin: 50px 20px;
+    @include large {
+        margin: 50px auto;
+    }
+    .images {
+        margin: auto;
+        img {
+            width: calc(100% - 10px);
+            aspect-ratio: 5/3;
+        }
+    }
+
+}
