@@ -7,10 +7,12 @@ import Title from "../Title/Title";
 export default function Skills() {
   var settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    cssEase: "linear",
     responsive: [
         {
           breakpoint: 768, // Mobile screen width
@@ -22,7 +24,7 @@ export default function Skills() {
         {
             breakpoint: 579, // Mobile screen width
             settings: {
-              slidesToShow: 1.5,
+              slidesToShow: 1,
               slidesToScroll: 1
             }
           }

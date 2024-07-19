@@ -28303,10 +28303,12 @@ var _titleDefault = parcelHelpers.interopDefault(_title);
 function Skills() {
     var settings = {
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
+        autoplay: true,
+        cssEase: "linear",
         responsive: [
             {
                 breakpoint: 768,
@@ -28318,7 +28320,7 @@ function Skills() {
             {
                 breakpoint: 579,
                 settings: {
-                    slidesToShow: 1.5,
+                    slidesToShow: 1,
                     slidesToScroll: 1
                 }
             }
@@ -28331,7 +28333,7 @@ function Skills() {
                 title: "Skills"
             }, void 0, false, {
                 fileName: "src/components/Skills/Skills.jsx",
-                lineNumber: 33,
+                lineNumber: 35,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactSlickDefault.default), {
@@ -28343,23 +28345,23 @@ function Skills() {
                             alt: "image"
                         }, void 0, false, {
                             fileName: "src/components/Skills/Skills.jsx",
-                            lineNumber: 37,
+                            lineNumber: 39,
                             columnNumber: 9
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/Skills/Skills.jsx",
-                        lineNumber: 36,
+                        lineNumber: 38,
                         columnNumber: 54
                     }, this))
             }, void 0, false, {
                 fileName: "src/components/Skills/Skills.jsx",
-                lineNumber: 35,
+                lineNumber: 37,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/Skills/Skills.jsx",
-        lineNumber: 32,
+        lineNumber: 34,
         columnNumber: 5
     }, this);
 }
@@ -32554,6 +32556,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 function Title({ title }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+        className: "title",
         children: title
     }, void 0, false, {
         fileName: "src/components/Title/Title.jsx",

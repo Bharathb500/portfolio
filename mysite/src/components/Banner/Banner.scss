@@ -3,4 +3,7 @@
 .banner {
     background-color: $color-banner-color;
     height: 50vh;
+    @include medium {
+        height: 25vh;
+    }
 }
