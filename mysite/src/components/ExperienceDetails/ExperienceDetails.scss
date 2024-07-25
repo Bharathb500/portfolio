@@ -1,0 +1,27 @@
+@import "../../assets/styles/index.scss";
+
+.experience-details {
+    max-width: 1248px;
+    margin: 100px auto;
+    position: relative;
+    border: 5px solid $color-banner-color;
+    min-height: 500px;
+    z-index: -1;
+    border-radius: 20px;
+    background-color: paleturquoise;
+    @include medium {
+        margin: 100px 20px;
+    }
+
+    .title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -40px;
+        padding: 20px;
+        background: $color-banner-color;
+        border-radius: 1000px;
+        z-index: -1;
+        color: $color-white;
+    }
+}

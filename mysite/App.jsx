@@ -7,6 +7,7 @@ import TypingText from "./src/components/TypingText/TypingText";
 import { popupcontent } from "./src/mockData/Popupcontent";
 import Skills from "./src/components/Skills/Skills";
 import Title from "./src/components/Title/Title";
+import ExperienceDetails from "./src/components/ExperienceDetails/ExperienceDetails";
 
 function App() {
   const [isModalOpen, setisModalOpen] = useState(false);
@@ -20,6 +21,7 @@ function App() {
         <TypingText />
       </Banner>
       <Skills/>
+      <ExperienceDetails/>
       <AboutmePopup clickHandler={clickHandler} isModalOpen={isModalOpen}>
         <PopupContent  content={popupcontent}/>
       </AboutmePopup>

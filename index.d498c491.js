@@ -27237,6 +27237,8 @@ var _skills = require("./src/components/Skills/Skills");
 var _skillsDefault = parcelHelpers.interopDefault(_skills);
 var _title = require("./src/components/Title/Title");
 var _titleDefault = parcelHelpers.interopDefault(_title);
+var _experienceDetails = require("./src/components/ExperienceDetails/ExperienceDetails");
+var _experienceDetailsDefault = parcelHelpers.interopDefault(_experienceDetails);
 var _s = $RefreshSig$();
 function App() {
     _s();
@@ -27251,23 +27253,28 @@ function App() {
                 clickHandler: clickHandler
             }, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 18,
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bannerDefault.default), {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _typingTextDefault.default), {}, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 20,
+                    lineNumber: 21,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 19,
+                lineNumber: 20,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skillsDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 22,
+                lineNumber: 23,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _experienceDetailsDefault.default), {}, void 0, false, {
+                fileName: "App.jsx",
+                lineNumber: 24,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutmePopupDefault.default), {
@@ -27277,12 +27284,12 @@ function App() {
                     content: (0, _popupcontent.popupcontent)
                 }, void 0, false, {
                     fileName: "App.jsx",
-                    lineNumber: 24,
+                    lineNumber: 26,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 23,
+                lineNumber: 25,
                 columnNumber: 7
             }, this)
         ]
@@ -27299,7 +27306,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./src/components/AboutmePopup/AboutmePopup":"3tqia","./src/components/Banner/Banner":"jqyOJ","./src/components/Header/Header":"hTZHl","./src/components/PopupContent/PopupContent":"liZTm","./src/components/TypingText/TypingText":"2mLho","./src/mockData/Popupcontent":"asqh5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./src/components/Skills/Skills":"lbEHu","./src/components/Title/Title":"904Ai"}],"3tqia":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./src/components/AboutmePopup/AboutmePopup":"3tqia","./src/components/Banner/Banner":"jqyOJ","./src/components/Header/Header":"hTZHl","./src/components/PopupContent/PopupContent":"liZTm","./src/components/TypingText/TypingText":"2mLho","./src/mockData/Popupcontent":"asqh5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./src/components/Skills/Skills":"lbEHu","./src/components/Title/Title":"904Ai","./src/components/ExperienceDetails/ExperienceDetails":"gxaZB"}],"3tqia":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$857c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28305,7 +28312,7 @@ function Skills() {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
         cssEase: "linear",
@@ -32574,6 +32581,45 @@ $RefreshReg$(_c, "Title");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["dlFZn","1xC6H","g9R30"], "g9R30", "parcelRequire7d1c")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gxaZB":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5fde = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5fde.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _title = require("../Title/Title");
+var _titleDefault = parcelHelpers.interopDefault(_title);
+var _experienceDetailsScss = require("./ExperienceDetails.scss");
+function ExperienceDetails() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "experience-details",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleDefault.default), {
+            title: "Experience"
+        }, void 0, false, {
+            fileName: "src/components/ExperienceDetails/ExperienceDetails.jsx",
+            lineNumber: 6,
+            columnNumber: 9
+        }, this)
+    }, void 0, false, {
+        fileName: "src/components/ExperienceDetails/ExperienceDetails.jsx",
+        lineNumber: 5,
+        columnNumber: 5
+    }, this);
+}
+_c = ExperienceDetails;
+exports.default = ExperienceDetails;
+var _c;
+$RefreshReg$(_c, "ExperienceDetails");
+
+  $parcel$ReactRefreshHelpers$5fde.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../Title/Title":"904Ai","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./ExperienceDetails.scss":"cl06l"}],"cl06l":[function() {},{}]},["dlFZn","1xC6H","g9R30"], "g9R30", "parcelRequire7d1c")
 
 //# sourceMappingURL=index.d498c491.js.map
