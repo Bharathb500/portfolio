@@ -1,0 +1,13 @@
+
+.project-details-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 20px;
+    li {
+        list-style-type: none;
+        line-height: 24px;
+    }
+}

@@ -32591,22 +32591,34 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _company = require("../../mockData/company");
+var _companies = require("../Companies/Companies");
+var _companiesDefault = parcelHelpers.interopDefault(_companies);
 var _title = require("../Title/Title");
 var _titleDefault = parcelHelpers.interopDefault(_title);
 var _experienceDetailsScss = require("./ExperienceDetails.scss");
 function ExperienceDetails() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "experience-details",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleDefault.default), {
-            title: "Experience"
-        }, void 0, false, {
-            fileName: "src/components/ExperienceDetails/ExperienceDetails.jsx",
-            lineNumber: 6,
-            columnNumber: 9
-        }, this)
-    }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleDefault.default), {
+                title: "Experience"
+            }, void 0, false, {
+                fileName: "src/components/ExperienceDetails/ExperienceDetails.jsx",
+                lineNumber: 8,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _companiesDefault.default), {
+                companies: (0, _company.companies)
+            }, void 0, false, {
+                fileName: "src/components/ExperienceDetails/ExperienceDetails.jsx",
+                lineNumber: 9,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "src/components/ExperienceDetails/ExperienceDetails.jsx",
-        lineNumber: 5,
+        lineNumber: 7,
         columnNumber: 5
     }, this);
 }
@@ -32620,6 +32632,282 @@ $RefreshReg$(_c, "ExperienceDetails");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../Title/Title":"904Ai","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./ExperienceDetails.scss":"cl06l"}],"cl06l":[function() {},{}]},["dlFZn","1xC6H","g9R30"], "g9R30", "parcelRequire7d1c")
+},{"react/jsx-dev-runtime":"iTorj","../Title/Title":"904Ai","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./ExperienceDetails.scss":"cl06l","../Companies/Companies":"cKaxq","../../mockData/company":"iUXGI"}],"cl06l":[function() {},{}],"cKaxq":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$09d6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$09d6.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _company = require("../company/Company");
+var _companyDefault = parcelHelpers.interopDefault(_company);
+var _companiesScss = require("./Companies.scss");
+function Companies({ companies }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "companies",
+        children: companies.length > 0 && companies.map((company)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _companyDefault.default), {
+                company: company
+            }, void 0, false, {
+                fileName: "src/components/Companies/Companies.jsx",
+                lineNumber: 7,
+                columnNumber: 36
+            }, this))
+    }, void 0, false, {
+        fileName: "src/components/Companies/Companies.jsx",
+        lineNumber: 5,
+        columnNumber: 5
+    }, this);
+}
+_c = Companies;
+exports.default = Companies;
+var _c;
+$RefreshReg$(_c, "Companies");
+
+  $parcel$ReactRefreshHelpers$09d6.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"../company/Company":"h5dbd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Companies.scss":"13cSy"}],"h5dbd":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$08cc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$08cc.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _image = require("../../common/Image/Image");
+var _imageDefault = parcelHelpers.interopDefault(_image);
+var _projectDetails = require("../ProjectDetails/ProjectDetails");
+var _projectDetailsDefault = parcelHelpers.interopDefault(_projectDetails);
+var _companyScss = require("./Company.scss");
+function Company({ company }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "company",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageDefault.default), {
+                imgSrc: company.companyLogo
+            }, void 0, false, {
+                fileName: "src/components/company/Company.jsx",
+                lineNumber: 7,
+                columnNumber: 9
+            }, this),
+            company.clientProjects.length > 0 && company.clientProjects.map((project)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectDetailsDefault.default), {
+                    projectDetails: project
+                }, void 0, false, {
+                    fileName: "src/components/company/Company.jsx",
+                    lineNumber: 8,
+                    columnNumber: 85
+                }, this))
+        ]
+    }, void 0, true, {
+        fileName: "src/components/company/Company.jsx",
+        lineNumber: 6,
+        columnNumber: 5
+    }, this);
+}
+_c = Company;
+exports.default = Company;
+var _c;
+$RefreshReg$(_c, "Company");
+
+  $parcel$ReactRefreshHelpers$08cc.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../../common/Image/Image":"hR1Uw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../ProjectDetails/ProjectDetails":"aj585","./Company.scss":"fW0ez"}],"aj585":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$af26 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$af26.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _title = require("../Title/Title");
+var _titleDefault = parcelHelpers.interopDefault(_title);
+var _image = require("../../common/Image/Image");
+var _imageDefault = parcelHelpers.interopDefault(_image);
+var _projectDetailsDropdown = require("../ProjectDetailsDropdown/ProjectDetailsDropdown");
+var _projectDetailsDropdownDefault = parcelHelpers.interopDefault(_projectDetailsDropdown);
+var _projectDetailsScss = require("./ProjectDetails.scss");
+var _s = $RefreshSig$();
+function ProjectDetails({ projectDetails }) {
+    _s();
+    const [isAccordionOpen, setIsAccordionOpen] = (0, _react.useState)(false);
+    const clickHandler = ()=>{
+        setIsAccordionOpen(!isAccordionOpen);
+    };
+    console.log(isAccordionOpen);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "project-details-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "project-details",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleDefault.default), {
+                        title: projectDetails.projectName
+                    }, void 0, false, {
+                        fileName: "src/components/ProjectDetails/ProjectDetails.jsx",
+                        lineNumber: 16,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: clickHandler,
+                        children: isAccordionOpen ? "-" : "+"
+                    }, void 0, false, {
+                        fileName: "src/components/ProjectDetails/ProjectDetails.jsx",
+                        lineNumber: 17,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/ProjectDetails/ProjectDetails.jsx",
+                lineNumber: 15,
+                columnNumber: 7
+            }, this),
+            isAccordionOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectDetailsDropdownDefault.default), {
+                details: projectDetails
+            }, void 0, false, {
+                fileName: "src/components/ProjectDetails/ProjectDetails.jsx",
+                lineNumber: 19,
+                columnNumber: 27
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/ProjectDetails/ProjectDetails.jsx",
+        lineNumber: 14,
+        columnNumber: 5
+    }, this);
+}
+_s(ProjectDetails, "UEVBaimnr/q+gcXaver5L7Vq+wk=");
+_c = ProjectDetails;
+exports.default = ProjectDetails;
+var _c;
+$RefreshReg$(_c, "ProjectDetails");
+
+  $parcel$ReactRefreshHelpers$af26.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Title/Title":"904Ai","../../common/Image/Image":"hR1Uw","../ProjectDetailsDropdown/ProjectDetailsDropdown":"bqeY8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./ProjectDetails.scss":"2K5Dp"}],"bqeY8":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a0c0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a0c0.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _projectDetailsDropdownScss = require("./ProjectDetailsDropdown.scss");
+function ProjectDetailsDropdown({ details }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "project-details-dropdown",
+        children: details.responsibilities.length > 0 && details.responsibilities.map((responsibility)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                children: responsibility.responsibility
+            }, void 0, false, {
+                fileName: "src/components/ProjectDetailsDropdown/ProjectDetailsDropdown.jsx",
+                lineNumber: 7,
+                columnNumber: 11
+            }, this))
+    }, void 0, false, {
+        fileName: "src/components/ProjectDetailsDropdown/ProjectDetailsDropdown.jsx",
+        lineNumber: 4,
+        columnNumber: 5
+    }, this);
+}
+_c = ProjectDetailsDropdown;
+exports.default = ProjectDetailsDropdown;
+var _c;
+$RefreshReg$(_c, "ProjectDetailsDropdown");
+
+  $parcel$ReactRefreshHelpers$a0c0.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./ProjectDetailsDropdown.scss":"c2MgI"}],"c2MgI":[function() {},{}],"2K5Dp":[function() {},{}],"fW0ez":[function() {},{}],"13cSy":[function() {},{}],"iUXGI":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "companies", ()=>companies);
+var _capgeminiLogoSvg = require("../assets/images/capgemini-logo.svg");
+var _capgeminiLogoSvgDefault = parcelHelpers.interopDefault(_capgeminiLogoSvg);
+const companies = [
+    {
+        companyLogo: (0, _capgeminiLogoSvgDefault.default),
+        joinedDate: "12 july 2021",
+        lastDate: "present",
+        clientProjects: [
+            {
+                projectName: "Vanguard",
+                projectStart: "Dec 2021",
+                projectEnd: "Dec 2022",
+                role: "Aem Front end developer",
+                responsibilities: [
+                    {
+                        responsibility: "Developed UI for AEM components likeHeader,Footer,and Social Share and manymore."
+                    },
+                    {
+                        responsibility: "Utilized CSS for backgrounds, layouts (flexand grid), positioning, text, borders, margins,padding, and more."
+                    },
+                    {
+                        responsibility: "Used Axe Dev Tools to identify and resolve accessibility issues on web pagesAchieved over 90% code coverage forJavaScript test cases."
+                    },
+                    {
+                        responsibility: "Used Bitbucket for version control ensuring seamless collaboration and codemanagement within the team."
+                    }
+                ]
+            },
+            {
+                projectName: "SAB",
+                projectStart: "June 2023",
+                projectEnd: "present",
+                role: "Aem Full Stack developer",
+                responsibilities: [
+                    {
+                        responsibility: "Developed 10+ AEM components with bothfrontend(html, css, js) and backend(Sling Models, Services, HTL/sightly)"
+                    },
+                    {
+                        responsibility: "Developed content fragment components and fetched conten fragment data using asset API."
+                    },
+                    {
+                        responsibility: "Used Experience Fragment Localization"
+                    },
+                    {
+                        responsibility: "Ensured seamless integration and functionality of AEM components in both Arabic and English languages"
+                    },
+                    {
+                        responsibility: "Achieved and maintained over 90% code coverage in Junit tests, ensuring robust and reliable code."
+                    },
+                    {
+                        responsibility: "Involved in Unit testing and bug fixing, ensuring high-quality deliverables."
+                    },
+                    {
+                        responsibility: "Improved site performance by leveraging Lighthouse reports to analyze and address performance issues, leading to enhanced loading speed and user experience."
+                    },
+                    {
+                        responsibility: "Managed Version control using Github,facilitting effective code reviews and collabration"
+                    }
+                ]
+            }
+        ]
+    }
+];
+
+},{"../assets/images/capgemini-logo.svg":"998C5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"998C5":[function(require,module,exports) {
+module.exports = require("430062ea2ba2d39").getBundleURL("avzPb") + "capgemini-logo.8442d5ad.svg" + "?" + Date.now();
+
+},{"430062ea2ba2d39":"lgJ39"}]},["dlFZn","1xC6H","g9R30"], "g9R30", "parcelRequire7d1c")
 
 //# sourceMappingURL=index.d498c491.js.map
